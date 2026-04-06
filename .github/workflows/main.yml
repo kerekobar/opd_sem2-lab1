@@ -84,6 +84,8 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
+          androidApplicationBundle: com.opdlab.labaopd
+          androidPackageName: com.opdlab.labaopd
 
       - uses: actions/upload-artifact@v4
         with:
